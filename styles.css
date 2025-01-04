@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+bh {
+    display: flex;
+    gap: 20px;
+}
+
+.special-info {
+    color: rgb(164, 164, 164);
+    font-style: italic;
+    margin-bottom: 60px;
+}
+
+/* Calendar Container Styling */
+#calendar-container {
+    padding: 20px;
+    margin-bottom: 0px; /* Ensure space for the legend at the bottom */
+}
+
+/* Footer Styling */
+#calendar-legend {
+    position: fixed;
+    font-size: 0.8rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.color-box {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 10px;
+    border: 1px solid #fff;
+}
+
+.holiday {
+    background-color: #ff9999; /* Light Red */
+}
+
+.fes {
+    background-color: #99ff99; /* Light Green */
+}
+
+.reserved {
+    background-color: #1976d2; /* Light Blue */
+}
+
+.exams {
+    background-color: #ffff99; /* Light Yellow */
+}
+
+/* Other existing CSS rules */
+
+/* Other existing CSS rules */
+
+
+h1 {
+    color: #ffffff;
+}
+
+#calendar-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.month {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    width: 320px;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.month-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+}
+
+.day-grid {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
+    padding: 15px;
+    width: 320px;
+    color: #e0e0e0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for 7 days of the week */
+    grid-gap: 2px;
+}
+
+.day-header {
+    font-weight: bold;
+    /* background-color: #333333; */
+    color: #ffffff;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.day-cell {
+    position: relative; /* Required for the tooltip */
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    color: #e0e0e0;
+}
+
+.day-cell:hover {
+    background-color: #555555;
+}
+
+.day-cell .tooltip {
+    position: absolute;
+    bottom: 100%; /* Position above the cell */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    z-index: 10;
+    font-size: 12px;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    display: none; /* Hide by default */
+    z-index: 1000;
+    transform: translateX(-50%); /* Center tooltip horizontally */
+}
+
+/* Show tooltip on hover */
+.day-cell:hover .tooltip {
+    display: block; /* Show on hover */
+    top: -30px; /* Adjust as needed */
+    left: 50%;
+}
+
+
+.today {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+.past-day {
+    background-color: #333333;
+    color: #777777;
+}
+
+.holiday {
+    background-color: #4e2020;
+    color: #ffffff;
+}
+
+.fes {
+    background-color: #388e3c;
+    color: #ffffff;
+}
+
+.sports-week {
+    background-color: #1976d2;
+    color: #ffffff;
+}
+
+.exams {
+    background-color: #7b1fa2;
+    color: #ffffff;
+}
+
+.day-cell:hover {
+    background-color: #555555;
+}
+
+.heading {
+    text-align: center;
+}

@@ -1,0 +1,1 @@
+This is just a copy of OFFICIAL calendar of PEC's EVEN SEMESTER 2024-25, but in a digital form. If you are refering this, I also suggest you to refer the latest updates regarding the calendar released time to time!
