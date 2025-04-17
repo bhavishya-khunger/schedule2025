@@ -31,9 +31,9 @@ const events = {
     "2025-05-13": "exams",
     "2025-05-14": "exams",
     "2025-05-15": "exams",
-    "2025-04-30": "reserved",
-    "2025-05-01": "reserved",
-    "2025-05-04": "reserved",
+    "2025-04-30": "holiday",
+    // "2025-05-01": "reserved",
+    "2025-05-04": "holiday",
 };
 
 // Create an array of months to display
